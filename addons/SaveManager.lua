@@ -1,7 +1,7 @@
 local httpService = game:GetService('HttpService')
 
 local SaveManager = {} do
-	SaveManager.Folder = 'Phantom Hub'
+	SaveManager.Folder = 'X7Project Addons'
 	SaveManager.Ignore = {}
 	SaveManager.Parser = {
 		Toggle = {

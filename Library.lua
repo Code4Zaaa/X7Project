@@ -1,5 +1,5 @@
-if game:GetService("CoreGui"):FindFirstChild("PHPremium.exe") then
-    game:GetService("CoreGui"):FindFirstChild("PHPremium.exe"):Destroy()
+if game:GetService("CoreGui"):FindFirstChild("X7UI.exe") then
+    game:GetService("CoreGui"):FindFirstChild("X7UI.exe"):Destroy()
 end
 
 local InputService = game:GetService('UserInputService');
@@ -19,7 +19,7 @@ ProtectGui(ScreenGui);
 
 ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Global;
 ScreenGui.Parent = CoreGui;
-ScreenGui.Name = "PHPremium.exe"
+ScreenGui.Name = "X7UI.exe"
 
 local Toggles = {};
 local Options = {};

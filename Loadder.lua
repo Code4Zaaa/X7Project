@@ -23,6 +23,7 @@ if s then
             return func(...)
         end
     end
+    rconsoleprint("Close This Console For Close Ur Roblox")
     uselessfunction(function() return end)
     while true do end
     for i = 0, 10000000 do

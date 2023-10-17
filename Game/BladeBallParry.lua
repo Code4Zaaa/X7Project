@@ -1,6 +1,6 @@
 getgenv().AutoParry = {
     ["Base Velocity"] = 3.4, --recommend 3 - 3.5,
-    ["Distance Parry"] = 25, --good if ur ping on 80
+    ["Distance Parry"] = 25, --good if ur ping on 80ms
     ["Show Part?"] = true,
     ["Spam Keybind"] = "E",
     ["HoldOrToggle"] = "Toggle" -- Hold / Toggle

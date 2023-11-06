@@ -374,7 +374,7 @@ textLabel.Parent = topbar
 
 local closeButton = Instance.new("ImageButton")
 closeButton.Name = "CloseButton"
-closeButton.Image = getcustomasset("Skays Addons/Close.png")
+closeButton.Image = "rbxassetid://15284048572"
 closeButton.ImageColor3 = Color3.fromRGB(237, 237, 237)
 closeButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 closeButton.BackgroundTransparency = 1
@@ -442,7 +442,7 @@ end)
 
 local editButton = Instance.new("ImageButton")
 editButton.Name = "EditButton"
-editButton.Image = getcustomasset("Skays Addons/ColorDropper.png")
+editButton.Image = "rbxassetid://15284053252"
 editButton.ImageColor3 = Color3.fromRGB(237, 237, 237)
 editButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 editButton.BackgroundTransparency = 1
@@ -466,7 +466,7 @@ uiGradient.Parent = editButton
 
 local transpantButton = Instance.new("ImageButton")
 transpantButton.Name = "transpantButton"
-transpantButton.Image = getcustomasset("Skays Addons/Transparants.png")
+transpantButton.Image = "rbxassetid://15284055625"
 transpantButton.ImageColor3 = Color3.fromRGB(255, 255, 255)
 transpantButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 transpantButton.BackgroundTransparency = 1
@@ -594,7 +594,7 @@ MainContainer.BackgroundTransparency = 1.000
 MainContainer.BorderColor3 = Color3.fromRGB(0, 0, 0)
 MainContainer.BorderSizePixel = 0
 MainContainer.Position = UDim2.new(0.207272723, 0, 0.104918033, 0)
-MainContainer.Size = UDim2.new(0, 435, 0, 272)
+MainContainer.Size = UDim2.new(0, 435, 0, 500)
 
 local ImageLabel = Instance.new("ImageLabel")
 ImageLabel.Parent = MainContainer
@@ -759,7 +759,7 @@ function tab:Section(Info)
 Info.Text = Info.Text or "Section"
 Info.Side = Info.Side or "Left"
 
-local SizeY = 23
+local SizeY = 26
 
 local sectiontable = {}
 
@@ -791,9 +791,9 @@ sectionFrame.Parent = section
 sectionFrame.ChildAdded:Connect(function(v)
     if v.ClassName == "Frame" then
         if v.Name == "Slider" then
-        SizeY = SizeY + 40
+            SizeY = SizeY + 40
         else
-        SizeY = SizeY + 27
+            SizeY = SizeY + 27
         end
     end
 end)
@@ -1257,7 +1257,7 @@ toggleUICorner.Parent = toggleFrame
 
 local circleIcon = Instance.new("ImageLabel")
 circleIcon.Name = "CheckIcon"
-circleIcon.Image = getcustomasset("Skays Addons/Circle.png")
+circleIcon.Image = "rbxassetid://15284045242"
 circleIcon.ImageColor3 = Color3.fromRGB(217, 217, 217)
 circleIcon.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 circleIcon.BackgroundTransparency = 1
@@ -1521,7 +1521,7 @@ dropdownText.Parent = dropdown
 
 local dropdownIcon = Instance.new("ImageLabel")
 dropdownIcon.Name = "DropdownIcon"
-dropdownIcon.Image = getcustomasset("Skays Addons/CollapseArrow.png")
+dropdownIcon.Image = "rbxassetid://15284044276"
 dropdownIcon.ImageColor3 = Color3.fromRGB(191, 191, 191)
 dropdownIcon.AnchorPoint = Vector2.new(1, 0)
 dropdownIcon.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
@@ -1757,7 +1757,7 @@ radioButtonText.Parent = button
 
 local radioButtonIcon = Instance.new("ImageLabel")
 radioButtonIcon.Name = "RadioButtonIcon"
-radioButtonIcon.Image = getcustomasset("Skays Addons/CollapseArrow.png")
+radioButtonIcon.Image = "rbxassetid://15284044276"
 radioButtonIcon.AnchorPoint = Vector2.new(1, 0)
 radioButtonIcon.ImageColor3 = Color3.fromRGB(191, 191, 191)
 radioButtonIcon.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
@@ -1770,7 +1770,7 @@ radioButtonIcon.Parent = button
 
 local radioButtonIcon2 = Instance.new("ImageLabel")
 radioButtonIcon2.Name = "RadioButtonIcon2"
-radioButtonIcon2.Image = getcustomasset("Skays Addons/RadioButton.png")
+radioButtonIcon2.Image = "rbxassetid://15284043427"
 radioButtonIcon2.AnchorPoint = Vector2.new(1, 0)
 radioButtonIcon2.ImageColor3 = Color3.fromRGB(191, 191, 191)
 radioButtonIcon2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
@@ -1823,7 +1823,7 @@ radioTextButton.Parent = radio
 
 local radioOuter = Instance.new("ImageLabel")
 radioOuter.Name = "RadioOuter"
-radioOuter.Image = getcustomasset("Skays Addons/RadioOuter.png")
+radioOuter.Image = "rbxassetid://15284041379"
 radioOuter.ImageColor3 = Color3.fromRGB(191, 191, 191)
 radioOuter.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 radioOuter.BackgroundTransparency = 1
@@ -1834,7 +1834,7 @@ radioOuter.Parent = radio
 
 local radioInner = Instance.new("ImageLabel")
 radioInner.Name = "RadioInner"
-radioInner.Image = getcustomasset("Skays Addons/RadioInner.png")
+radioInner.Image = "rbxassetid://15284042752.png"
 radioInner.AnchorPoint = Vector2.new(0.5, 0.5)
 radioInner.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 radioInner.BackgroundTransparency = 1
@@ -2031,7 +2031,6 @@ transpantButton.MouseButton1Click:Connect(function()
         transpantButton.ImageColor3 = Color3.fromRGB(0, 255, 0)
     end
 end)
-
 
 return window
 end
